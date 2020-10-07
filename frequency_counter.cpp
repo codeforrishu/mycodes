@@ -18,6 +18,26 @@ int main()
     }
 
 // what to do
+        for(i=0; i<size; i++)
+    {
+        count = 1;
+        for(j=i+1; j<size; j++)
+        {
+
+            if(arr[i]==arr[j])
+            {
+                count++;
+
+                freq[j] = 0;
+            }
+        }
+
+        if(freq[i] != 0)
+        {
+            freq[i] = count;
+        }
+    }
+
 
    
     printf("\nFrequency of all elements of array : \n");
